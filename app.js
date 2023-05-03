@@ -8,14 +8,12 @@ app.set(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-
 app.use("/", require("./routes/home"));
 app.use("/signup", require("./routes/signUp"));
 
 app.use((req, res, next) => {
   res.status(404).render("404");
 });
-
 
 app.listen(port);
 

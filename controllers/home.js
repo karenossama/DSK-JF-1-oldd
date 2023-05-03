@@ -5,5 +5,8 @@ const home = (req, res) => {
 const about = (req, res) => {
   res.render("about");
 };
+const contact = (req, res) => {
+  res.render("contact");
+};
 
-module.exports = { home, about };
+module.exports = { home, about, contact };

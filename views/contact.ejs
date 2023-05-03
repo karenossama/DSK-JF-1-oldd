@@ -10,33 +10,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
-    <!-- <header>
-      <nav>
-        <img src="" alt="logo" />
-        <div class="navigation">
-          <ul>
-            <i id="menu-close" class="fas fa-times"></i>
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>About</li>
-            <li><a href="#"></a>Courses</li>
-            <li><a class="active" href="#"></a>Contact Us</li>
-          </ul>
-          <img id="menu-btn" src="images/money-uni-students.jpg" alt="" />
-        </div>
-      </nav>
-    </header> -->
-    <!-- Home -->
+    <!--Navigation-->
+    <%- include('./components/nav.ejs')%>
     <main>
       <section id="about-home">
         <h2>Contact Us</h2>
       </section>
       <section id="contact">
         <div class="getin">
-          <h2>Get in touch</h2>
-          <p>Looking for help? Fill the form and start a new adventure.</p>
+          <h2 class="text">Get in touch</h2>
+          <p class="text">Looking for help? Fill the form and start a new adventure.</p>
 
           <div class="getin-details">
             <h3>Headquarters</h3>
@@ -63,7 +51,7 @@
             </div>
           </div>
         </div>
-        <div class="form">
+        <form>
           <h4>Let's Connect</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div class="form-row">
@@ -76,8 +64,6 @@
           </div>
           <div class="form-col">
             <textarea
-              name=""
-              id=""
               cols="30"
               rows="8"
               placeholder="How can We Help?"
@@ -86,17 +72,11 @@
           <div class="form-col">
             <button>Send Message</button>
           </div>
-        </div>
-      </section>
-      <section id="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7286615.899145397!2d30.8768375!3d26.906099949999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2sEgypt!5e0!3m2!1sen!2seg!4v1683051254937!5m2!1sen!2seg"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        </form>
       </section>
     </main>
+    <!-- footer  -->
+    <%- include('./components/footer.ejs') %>
+    <script src="js/nav.js"></script>
   </body>
 </html>
