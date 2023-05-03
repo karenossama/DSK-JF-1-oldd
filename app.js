@@ -9,7 +9,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("home");
+});
+app.get("/about", (req, res) => {
+  res.render("about");
 });
 
 app.use("/signup", require("./routes/signUp"));
@@ -18,13 +21,20 @@ app.use((req, res, next) => {
   res.status(404).render("404");
 });
 
-mongoose
-  .connect("mongodb+srv://farid:farid@learnjs.wuejl3c.mongodb.net/users?retryWrites=true&w=majority")
-  .then((result) => {
-    app.listen(port, () => {
-      console.log(`Example app listening on -> http://localhost:${port}  & connect to the DataBase`);
-    });
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+
+app.listen(port);
+
+// mongoose
+//   .connect(
+//     "mongodb+srv://farid:farid@learnjs.wuejl3c.mongodb.net/users?retryWrites=true&w=majority"
+//   )
+//   .then((result) => {
+//     app.listen(port, () => {
+//       console.log(
+//         `Example app listening on -> http://localhost:${port}  & connect to the DataBase`
+//       );
+//     });
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
