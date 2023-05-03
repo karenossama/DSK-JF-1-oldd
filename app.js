@@ -8,13 +8,8 @@ app.set(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-  res.render("home");
-});
-app.get("/about", (req, res) => {
-  res.render("about");
-});
 
+app.use("/", require("./routes/home"));
 app.use("/signup", require("./routes/signUp"));
 
 app.use((req, res, next) => {

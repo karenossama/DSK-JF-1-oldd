@@ -27,7 +27,6 @@ nav .navigation {
   height: 30px;
   display: none;
 }
-
 #menu-close {
   display: none;
 }
@@ -46,10 +45,27 @@ nav .navigation ul li a:not(.log) {
   font-size: 16px;
   font-weight: 500;
   transition: 0.3s ease;
+  position: relative;
 }
 nav .navigation ul li a.active,
 nav .navigation ul li a:not(.log):hover {
   color: #fdc938;
+}
+
+nav .navigation ul li a:not(.log)::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  top: 100%;
+  right: 50%;
+  background-color: rgb(21, 21, 100);
+  transition: 0.3s;
+}
+nav .navigation ul li a:not(.log):hover:after {
+  width: 100%;
+  right: 0;
 }
 
 .log {
