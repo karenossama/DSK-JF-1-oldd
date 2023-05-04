@@ -10,6 +10,7 @@ app.use(express.static("public"));
 
 app.use("/", require("./routes/home"));
 app.use("/signup", require("./routes/signUp"));
+app.use("/admin", require("./routes/admin"));
 
 app.use((req, res, next) => {
   res.status(404).render("404");
