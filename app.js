@@ -10,9 +10,14 @@ app.use(express.static("public"));
 app.use("/", require("./routes/home"));
 app.use("/admin", require("./routes/admin"));
 
+app.get("/student", (req, res) => {
+  res.render("studentHomePage");
+});
+
 app.use((req, res, next) => {
   res.status(404).render("404");
 });
 
-app.listen(process.env.PORT || 3001);
-
+app.listen(process.env.PORT || 3001, () => {
+  console.log("server is running");
+});
