@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Poppins&family=Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+body {
+  background: gainsboro;
+}
+/* Start nav */
+
+.container {
+  display: flex;
+}
+
+nav {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 110vh;
+  left: 0;
+  background: rgb(0, 151, 151);
+  width: 25%;
+  overflow: hidden;
+  box-shadow: 0 20px 20px rgba(139, 141, 141, 0.749);
+}
+.logo {
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 0;
+}
+.logo img {
+  width: 120px;
+}
+.logo span {
+  font-weight: bold;
+  padding-top: 15%;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.nav-dashboard {
+  position: relative;
+  left: -100px;
+}
+.active {
+  background: #f8f8f8;
+}
+.active a {
+  color: #000;
+}
+
+a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+nav a i {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item {
+  position: relative;
+  top: 10px;
+  left: px;
+  margin-left: 10px;
+}
+nav a:hover {
+  background: #ffffff;
+  color: #000;
+}
+.logout {
+  position: absolute;
+  bottom: 35px;
+}
+/* end nav */
+
+/* start project page  */
+
+main h1 {
+  margin: 20px;
+  font-weight: 400;
+  color: #393838;
+}
+
+main .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+main .project-card .description{
+  font-size: 14px;
+  font-weight: 400;
+  color: #393838;
+  margin: 10px;
+}
+main .project-card {
+  background: #ffffff;
+  border-radius: 10px;
+  height: 270px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 5px;
+}
+main .project-card h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(37, 37, 37);
+  margin: 10px;
+}
+main .project-card p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #393838;
+}
+main .project-card .info {
+  font-size: 14px;
+  font-weight: 400;
+}
+main .project-card button {
+  background: rgb(0, 151, 151);
+  color: #f8f8f8;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+main .project-card button:hover{
+  background: rgb(2, 107, 107);
+}
+
+/* SECOND SECTION  */
+main .second-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .second-section h2 {
+  margin: 20px;
+  font-weight: 400;
+  color: #393838;
+}
+
+/* ------TEAM REQUESTS------ */
+main .second-section .team-requests {
+  display: flex;
+
+}
+main .second-section .team-requests-card {
+  background: #ffffff;
+  border-radius: 10px;
+  height: 190px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  padding: 15px;
+}
+main .second-section .team-requests-card .team-request-btn button {
+  background: rgb(0, 151, 151);
+  color: #f8f8f8;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+main .second-section .team-requests-card .team-request-btn .decline:hover{
+  background: rgb(200, 11, 11);
+
+}
+main .second-section .team-requests-card .team-request-btn .accept:hover{
+  background: rgb(14, 170, 50);
+
+}
+/* ------DEADLINE------ */
+main .deadlines{
+  width: 50%;
+}
+main .deadlines-container {
+  background: #f8f8f8;
+ 
+  height: 200px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 15px;
+  margin-top: 25px;
+  overflow-y: auto;
+}
+main .deadlines-container::-webkit-scrollbar {
+  display: none;
+}
+main .deadlines-container ul {
+  list-style: none;
+}
+main .deadlines-container li {
+  text-decoration: none;
+  display: flex;
+  border-bottom: #cac9c96d 1px solid;
+  border-width: 30%;
+}
+main .deadlines-container a {
+  color: #393838;
+}
+main .deadline-project span {
+  color: rebeccapurple;
+  padding: 10px;
+}
+/* end project page  */
