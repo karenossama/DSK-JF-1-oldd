@@ -17,164 +17,202 @@
     />
     <!-- Styles  -->
     <link rel="stylesheet" href="css/adminDashboard.css" />
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/dashboard.css" />
   </head>
 
   <body>
-    <div class="sidebar close">
-      <!-- ========== Logo ============  -->
-      <a href="#" class="logo-box">
-        <img src="/img/logo/DSK-JF-drak-transparent-logo.png" />
-        <!-- <i class='bx bxl-xing'></i> -->
-        <div class="logo-name"></div>
-      </a>
+    <%- include('./aside.ejs')%>
+    <!-- MAIN -->
+      <main>
+        <!-- info-data -->
+        <section>
+          <article>
+            <div class="info-data">
+              <!-- info-data-card -->
+              <div class="card">
+                <div class="head">
+                  <div>
+                    <h2>1500</h2>
+                    <p>Students</p>
+                  </div>
+                  <i class="bx bx-trending-up icon"></i>
+                </div>
+                <span class="progress" data-value="40%"></span>
+                <span class="label">70%</span>
+              </div>
 
-      <!-- ========== List ============  -->
-      <ul class="sidebar-list">
-        <!-- -------- Non Dropdown List Item ------- -->
-        <li>
-          <div class="title">
-            <a href="/admin" class="link">
-              <box-icon name="user"></box-icon>
-              <i class="bx bx-grid-alt"></i>
-              <span class="name">Dashboard</span>
-            </a>
-            <!-- <i class='bx bxs-chevron-down'></i> -->
-          </div>
-          <div class="submenu">
-            <a href="/admin" class="link submenu-title">Dashboard</a>
-            <!-- submenu links here  -->
-          </div>
-        </li>
+              <div class="card">
+                <div class="head">
+                  <div>
+                    <h2>1500</h2>
+                    <p>Tutors</p>
+                  </div>
+                  <i class="bx bx-trending-up icon"></i>
+                </div>
+                <span class="progress" data-value="60%"></span>
+                <span class="label">20%</span>
+              </div>
 
-        <!-- -------- Dropdown List Item ------- -->
-        <li class="dropdown">
-          <div class="title">
-            <a href="#" class="link">
-              <i class="bx bx-user"></i> <span class="name">Students</span>
-            </a>
-            <i class="bx bxs-chevron-down"></i>
-          </div>
-          <div class="submenu">
-            <a href="#" class="link submenu-title">Students</a>
-            <a href="#" class="link">Details</a>
-            <a href="/admin/student/add" class="link">Add Student</a>
-            <a href="/admin/student/search-edit" class="link">Edit Student</a>
-            <a href="/admin/student/search-ban" class="link">Ban Student</a>
-          </div>
-        </li>
+              <div class="card">
+                <div class="head">
+                  <div>
+                    <h2>1500</h2>
+                    <p>Courses</p>
+                  </div>
+                  <i class="bx bx-trending-up icon"></i>
+                </div>
+                <span class="progress" data-value="70%"></span>
+                <span class="label">50%</span>
+              </div>
 
-        <!-- -------- Dropdown List Item ------- -->
-        <li class="dropdown">
-          <div class="title">
-            <a href="#" class="link">
-              <i id="fawsomeicons" class="fas fa-chalkboard-teacher"></i>
-              <span class="name">Courses</span>
-            </a>
-            <i class="bx bxs-chevron-down"></i>
-          </div>
-          <div class="submenu">
-            <a href="#" class="link submenu-title">Courses</a>
-            <a href="#" class="link">Details</a>
-            <a href="/joe - courses/courses/Add-courses.html" class="link">Add Course</a>
-            <a href="/joe - courses/courses/searcheditc.html" class="link">Edit Course</a>
-            <a href="/joe - courses/courses/searchremovec.html" class="link">Remove Course</a>
-          </div>
-        </li>
+              <div class="card">
+                <div class="head">
+                  <div>
+                    <h2>1500</h2>
+                    <p>Projects</p>
+                  </div>
+                  <i class="bx bx-trending-up icon"></i>
+                </div>
+                <span class="progress" data-value="20%"></span>
+                <span class="label">80%</span>
+              </div>
+            </div>
+          </article>
 
-        <!-- -------- Dropdown List Item ------- -->
-        <li class="dropdown">
-          <div class="title">
-            <a href="#" class="link">
-              <i id="fawsomeicons" class="fa-solid fa-diagram-project"></i>
-              <span class="name">Projects</span>
-            </a>
-            <i class="bx bxs-chevron-down"></i>
-          </div>
-          <div class="submenu">
-            <a href="#" class="link submenu-title">Projects</a>
-            <a href="#" class="link">Details</a>
-            <a href="/joe - projects/projects/Add-projects.html" class="link">Add Project</a>
-            <a href="/joe - projects/projects/searcheditp.html" class="link">Edit Project</a>
-            <a href="/joe - projects/projects/searchremovep.html" class="link">Remove Projects</a>
-          </div>
-        </li>
+          <div class="data">
+            <!-- CHART CONTAINER -->
+            <div class="contact-data">
+              <div class="head">
+                <h3>Sales Report</h3>
+                <!-- THREE DOTS  -->
+                <div class="menu">
+                  <i class="bx bx-dots-horizontal-rounded icon"></i>
+                  <ul class="menu-link">
+                    <li><a href="">Edit</a></li>
+                    <li><a href="">Save</a></li>
+                    <li><a href="">Remove</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="chart"></div>
+            </div>
 
-        <!-- -------- Dropdown List Item ------- -->
-        <li class="dropdown">
-          <div class="title">
-            <a href="#" class="link">
-              <i id="fawsomeicons" class="fa-solid fa-note-sticky"></i>
-              <span class="name">Exams</span>
-            </a>
-            <i class="bx bxs-chevron-down"></i>
-          </div>
-          <div class="submenu">
-            <a href="#" class="link submenu-title">Exams</a>
-            <a href="#" class="link">Details</a>
-            <a href="/joe - Exams/Exams/Create Exam.html" class="link">Add Exam</a>
-            <a href="/joe - Exams/Exams/searcheditE.html" class="link">Edit Exam</a>
-            <a href="/joe - Exams/Exams/searchremoveE.html" class="link">Remove Exam</a>
-          </div>
-        </li>
+            <!-- CHATBOX CONTAINER-->
+            <div class="contact-data">
+              <div class="head">
+                <h3>Chatbox</h3>
+                <!-- CHATBOX THREE DOTS-->
+                <div class="menu">
+                  <i class="bx bx-dots-horizontal-rounded icon"></i>
+                  <ul class="menu-link">
+                    <li><a href="">Edit</a></li>
+                    <li><a href="">Save</a></li>
+                    <li><a href="">Remove</a></li>
+                  </ul>
+                </div>
+              </div>
 
-        <!-- -------- Dropdown List Item ------- -->
-        <li class="dropdown">
-          <div class="title">
-            <a href="#" class="link">
-              <i id="fawsomeicons" class="fa-solid fa-k"></i>
-              <span class="name">Kahoot</span></a
-            >
-            <i class="bx bxs-chevron-down"></i>
+              <!-- CHATBOX-->
+              <!-- MSG 1 -->
+              <div class="chat-box">
+                <p class="day"><span>Today</span></p>
+                <div class="msg">
+                  <img src="img/avatar.jpg" alt="" />
+                  <div class="chat">
+                    <div class="profile">
+                      <span class="username">Alan</span>
+                      <span class="time">18:30</span>
+                    </div>
+                    <p>Hello.</p>
+                  </div>
+                </div>
+                <!-- MSG 2 -->
+                <div class="msg me">
+                  <div class="chat">
+                    <div class="profile">
+                      <span class="time">18:30</span>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Officia cumque beatae accusamus ea placeat nihil
+                      praesentium cum distinctio odio reprehenderit fugiat iusto
+                      reiciendis adipisci obcaecati, dicta laboriosam,
+                      consequuntur illo dignissimos?.
+                    </p>
+                  </div>
+                </div>
+                <!-- MSG 3 -->
+                <div class="msg">
+                  <img src="img/avatar.jpg" alt="" />
+                  <div class="chat">
+                    <div class="profile">
+                      <span class="username">Alan</span>
+                      <span class="time">18:30</span>
+                    </div>
+                    <p>Hello.</p>
+                  </div>
+                </div>
+                <!-- MSG 4 -->
+                <div class="msg me">
+                  <div class="chat">
+                    <div class="profile">
+                      <span class="time">18:30</span>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Officia cumque beatae accusamus ea placeat nihil
+                      praesentium cum distinctio odio reprehenderit fugiat iusto
+                      reiciendis adipisci obcaecati, dicta laboriosam,
+                      consequuntur illo dignissimos?.
+                    </p>
+                  </div>
+                </div>
+                <!-- MSG 4 -->
+                <div class="msg me">
+                  <div class="chat">
+                    <div class="profile">
+                      <span class="time">18:30</span>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+                <!-- MSG 5 -->
+                <div class="msg me">
+                  <div class="chat">
+                    <div class="profile">
+                      <span class="time">18:30</span>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- MSG TYPE BOX -->
+              <section>
+                <form action="#">
+                  <div class="form-group">
+                    <input type="text" placeholder="Type..." />
+                    <button type="submit" class="btn-send">
+                      <i class="bx bxs-send"></i>
+                    </button>
+                  </div>
+                </form>
+              </section>
+            </div>
           </div>
-          <div class="submenu">
-            <a href="#" class="link submenu-title">Kahoot</a>
-            <a href="#" class="link">Details</a>
-            <a href="#" class="link">Add Kahoot</a>
-            <a href="#" class="link">Edit Kahoot</a>
-            <a href="#" class="link">Remove Kahoot</a>
-          </div>
-        </li>
-        <!-- -------- Non Dropdown List Item ------- -->
-        <li>
-          <div class="title">
-            <a href="#" class="link">
-              <i class="bx bx-line-chart"></i>
-              <span class="name">Analysis</span>
-            </a>
-            <!-- <i class='bx bxs-chevron-down'></i> -->
-          </div>
-          <div class="submenu">
-            <a href="#" class="link submenu-title">Analysis</a>
-            <!-- submenu links here  -->
-          </div>
-        </li>
+        </section>
+      </main>
+    <!-- MAIN -->
 
-        <!-- -------- Non Dropdown List Item ------- -->
-        <li>
-          <div class="title">
-            <a href="#" class="link">
-              <i class="bx bx-cog"></i>
-              <span class="name">Settings</span>
-            </a>
-            <!-- <i class='bx bxs-chevron-down'></i> -->
-          </div>
-          <div class="submenu">
-            <a href="#" class="link submenu-title">Settings</a>
-            <!-- submenu links here  -->
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <!-- ============= Home Section =============== -->
-    <section class="home">
-      <div class="toggle-sidebar">
-        <i class="bx bx-menu"></i>
-        <div class="text">DSK JF</div>
-      </div>
-
-    <h5>dashboard</h5>
-
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/script.js"></script>
     <!-- Link JS -->
     <script src="/js/adminDashboard.js"></script>
   </body>
