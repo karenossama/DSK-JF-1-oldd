@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add student</title>
+    <title>Add course</title>
 
     <!-- Box Icons  -->
     <link
@@ -402,19 +402,27 @@
   <body>
     <%- include('./aside.ejs')%>
 
-    <!-- ============= Home Section =============== -->
     <section class="home">
       <div class="container">
         <div class="right">
-          <h2 id="j">Add Student</h2>
-          <input type="text" class="field" placeholder="Student's Name" />
-          <input type="text" class="field" placeholder="Student's Email" />
-          <input type="text" class="field" placeholder="Student's Password" />
+          <h2 id="j">Add Course</h2>
+          <input type="text" class="field" placeholder="Course's Name" />
+          <input type="text" class="field" placeholder="Course's ID" />
+          <input type="text" class="field" placeholder="Doctor's Name" />
+
+          <input
+            type="text"
+            class="field"
+            placeholder="Course's num of lectures"
+          />
           <textarea placeholder="Notes" class="field"></textarea>
           <button class="btn">Add</button>
         </div>
       </div>
     </section>
+
+    <!-- Link JS -->
     <script src="/js/adminDashboard.js"></script>
+
   </body>
 </html>

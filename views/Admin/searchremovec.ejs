@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add student</title>
+    <title>search to remove course</title>
 
     <!-- Box Icons  -->
     <link
@@ -401,20 +401,24 @@
 
   <body>
     <%- include('./aside.ejs')%>
-
-    <!-- ============= Home Section =============== -->
     <section class="home">
+
       <div class="container">
         <div class="right">
-          <h2 id="j">Add Student</h2>
-          <input type="text" class="field" placeholder="Student's Name" />
-          <input type="text" class="field" placeholder="Student's Email" />
-          <input type="text" class="field" placeholder="Student's Password" />
-          <textarea placeholder="Notes" class="field"></textarea>
-          <button class="btn">Add</button>
+          <h2 id="j">Search Course</h2>
+
+          <!-- <input class="filed" type="text" name="search" placeholder="Enter "> -->
+          <div class="serchbar">
+          <input type="text" class="field" placeholder="Course ID" /> <a href="/admin/ban-courses"> <i id="searchicon" class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+          </div>
+          <!-- <button class="btn">Search</button> -->
         </div>
       </div>
+    
+      
     </section>
+    <!-- Link JS -->
     <script src="/js/adminDashboard.js"></script>
+
   </body>
 </html>
