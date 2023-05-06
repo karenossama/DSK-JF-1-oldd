@@ -34,6 +34,22 @@ const searchEditCourse = (req, res) => {
   res.render("admin/searcheditc");
 };
 
+const addExam = (req, res) => {
+  res.render("admin/Add-Exams");
+};
+const banExam = (req, res) => {
+  res.render("admin/Ban-Exam");
+};
+const editExam = (req, res) => {
+  res.render("admin/Edit-Exam");
+};
+const searchBanExam = (req, res) => {
+  res.render("admin/searchremoveE");
+};
+const searchEditExam = (req, res) => {
+  res.render("admin/searcheditE");
+};
+
 module.exports = {
   adminDashboard,
   addStudent,
@@ -46,4 +62,9 @@ module.exports = {
   editCourse,
   searchBanCourse,
   searchEditCourse,
+  addExam,
+  banExam,
+  editExam,
+  searchBanExam,
+  searchEditExam,
 };
