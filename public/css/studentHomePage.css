@@ -344,7 +344,6 @@ nav a.active {
 .aside-requests a {
   color: purple;
   position: absolute;
-  /* bottom: 20px; */
   right: 0;
   width: 35%;
   top: 5px;
