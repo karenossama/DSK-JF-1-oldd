@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
+    <title>search to remove course</title>
 
     <!-- Box Icons  -->
     <link
@@ -16,14 +16,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
     <!-- Styles  -->
-    <link rel="stylesheet" href="css/adminDashboard.css" />
+    <link rel="stylesheet" href="/Sarah/assets/css/style.css" />
   </head>
 
   <body>
     <div class="sidebar close">
       <!-- ========== Logo ============  -->
       <a href="#" class="logo-box">
-        <img src="img/logo/DSK-JF-drak-transparent-logo.png" />
+        <img src="/public/img/logo/DSK-JF-drak-transparent-logo.png" />
         <!-- <i class='bx bxl-xing'></i> -->
         <div class="logo-name"></div>
       </a>
@@ -33,7 +33,7 @@
         <!-- -------- Non Dropdown List Item ------- -->
         <li>
           <div class="title">
-            <a href="#" class="link">
+            <a href="/joe/index.html" class="link">
               <box-icon name="user"></box-icon>
               <i class="bx bx-grid-alt"></i>
               <span class="name">Dashboard</span>
@@ -57,9 +57,9 @@
           <div class="submenu">
             <a href="#" class="link submenu-title">Students</a>
             <a href="#" class="link">Details</a>
-            <a href="#" class="link">Add Student</a>
-            <a href="#" class="link">Edit Student</a>
-            <a href="#" class="link">Ban Student</a>
+            <a href="/joe/Student/Add-Student.html" class="link">Add Student</a>
+            <a href="/joe/Student/searchedit.html" class="link">Edit Student</a>
+            <a href="/joe/Student/searchban.html" class="link">Ban Student</a>
           </div>
         </li>
 
@@ -75,9 +75,9 @@
           <div class="submenu">
             <a href="#" class="link submenu-title">Courses</a>
             <a href="#" class="link">Details</a>
-            <a href="#" class="link">Add Course</a>
-            <a href="#" class="link">Edit Course</a>
-            <a href="#" class="link">Remove Course</a>
+            <a href="/joe - courses/courses/Add-courses.html" class="link">Add Course</a>
+            <a href="/joe - courses/courses/searcheditc.html" class="link">Edit Course</a>
+            <a href="/joe - courses/courses/searchremovec.html" class="link">Remove Course</a>
           </div>
         </li>
 
@@ -93,9 +93,9 @@
           <div class="submenu">
             <a href="#" class="link submenu-title">Projects</a>
             <a href="#" class="link">Details</a>
-            <a href="#" class="link">Add Project</a>
-            <a href="#" class="link">Edit Project</a>
-            <a href="#" class="link">Remove Projects</a>
+            <a href="/joe - projects/projects/Add-projects.html" class="link">Add Project</a>
+            <a href="/joe - projects/projects/searcheditp.html" class="link">Edit Project</a>
+            <a href="/joe - projects/projects/searchremovep.html" class="link">Remove Projects</a>
           </div>
         </li>
 
@@ -172,9 +172,23 @@
         <i class="bx bx-menu"></i>
         <div class="text">DSK JF</div>
       </div>
-    </section>
 
+      
+      <div class="container">
+        <div class="right">
+          <h2 id="j">Search Course</h2>
+
+          <!-- <input class="filed" type="text" name="search" placeholder="Enter "> -->
+          <div class="serchbar">
+          <input type="text" class="field" placeholder="Course ID" /> <a href="/joe - courses/courses/Ban courses.html"> <i id="searchicon" class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+          </div>
+          <!-- <button class="btn">Search</button> -->
+        </div>
+      </div>
+    
+      
+    </section>
     <!-- Link JS -->
-    <script src="js/adminDashboard.js"></script>
+    <script src="../Sarah/assets/js/main.js"></script>
   </body>
 </html>

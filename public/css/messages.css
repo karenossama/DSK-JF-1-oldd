@@ -152,7 +152,7 @@ nav a.active {
 }
 /* end main messages  */
 
-/* start aside deadlines */
+/* start aside Chatbox */
 .main-aside {
   position: relative;
   margin-left: 50px;
@@ -165,7 +165,6 @@ nav a.active {
   border-radius: 20px;
   padding: 10px;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-  /* height: 80vh;   */
 }
 
 .aside-top {
@@ -200,7 +199,7 @@ nav a.active {
   font-size: 12px;
 }
 
-.aside-deadlines .card .See-more {
+.aside-deadlines .card .see-more {
   background: rgb(237, 0, 202);
   color: #fff;
   padding: 7px 15px;
@@ -208,10 +207,10 @@ nav a.active {
   margin-top: 15px;
   cursor: pointer;
 }
-.aside-deadlines .card .See-more:hover {
+.aside-deadlines .card .see-more:hover {
   background: rgba(134, 0, 160, 0.856);
 }
-.aside-deadlines .card .Reply {
+.aside-deadlines .card .reply {
   background: rgb(10, 194, 0);
   color: #fff;
   padding: 7px 15px;
@@ -219,10 +218,10 @@ nav a.active {
   margin-top: 15px;
   cursor: pointer;
 }
-.aside-deadlines .card .Reply:hover {
+.aside-deadlines .card .reply:hover {
   background: rgba(0, 78, 36, 0.856);
 }
-/* end aside deadlines */
+/* end aside Chatbox */
 
 /* start main requests */
 .main-aside-bottom {
@@ -271,4 +270,4 @@ nav a.active {
 .aside-requests .card button:hover {
   background: rgba(223, 70, 15, 0.856);
 }
-/* end aside deadlines */
+/* end aside requests */
