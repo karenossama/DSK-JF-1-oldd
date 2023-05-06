@@ -65,13 +65,25 @@ nav a i {
   margin-left: 10px;
 }
 a:hover {
-  background: #ffffff;
-  color: #000;
+  background: #00555a;
+  border-radius: 8px;
+  color: #ffffff;
+  width: 100%;
 }
+
+nav a.active {
+  background: #ffffff;
+  border-radius: 8px;
+  color: #000;
+  width: 100%;
+  height: 100%;
+}
+
 .logout {
   position: absolute;
   bottom: 35px;
 }
+
 /* end nav */
 
 /* start main courses*/
@@ -195,9 +207,7 @@ a:hover {
   float: right;
   margin: -45px 20px 20px 0;
 }
-#hmtl {
-  color: red;
-}
+
 /* end main projects */
 
 /* start aside deadlines */
