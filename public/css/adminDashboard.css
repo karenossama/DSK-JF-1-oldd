@@ -325,6 +325,38 @@ textarea {
   right: 39%;
   top: 51%;
 }
+
+
+.charts {
+  display: flex;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.chart {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+
+.chart h2 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #666;
+  text-align: center
+}
+#one{
+  width: 65%;
+}
+#two{
+width: 35%;
+}
+
 /* ============ Responsive / Breakpoints ========== */
 @media (max-width: 1080px) {
 }
