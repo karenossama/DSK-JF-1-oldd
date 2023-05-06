@@ -237,7 +237,7 @@ nav a.active {
   margin-top: 20px;
 }
 .aside-deadlines .card {
-  width: 33%;
+  width: 100%;
   margin: 10px;
   background: #fff;
   text-align: center;
@@ -271,7 +271,7 @@ nav a.active {
 .main-aside-bottom {
   position: relative;
   margin: 55px 0 0 0;
-  width: 40%;
+  width: 36%;
   float: right;
   top: 0;
   background: #fff;
@@ -338,4 +338,21 @@ nav a.active {
 .aside-requests .card button:hover {
   background: rgba(0, 134, 143, 0.856);
   box-shadow: 2px 2px 5px rgb(45, 45, 45);
+}
+
+.aside-requests a {
+  color: purple;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  width: 30%;
+}
+.aside-requests a:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(231, 0, 231);
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  width: 30%;
+  border-radius: 40px;
 }
