@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>search to remove Exam</title>
+    <title>Analysis</title>
 
     <!-- Box Icons  -->
     <link
@@ -16,7 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
     <!-- Styles  -->
-    <link rel="stylesheet" href="/Sarah/assets/css/style.css" />
+    <link rel="stylesheet" href="/public/css/adminDashboard.css" />
   </head>
 
   <body>
@@ -93,7 +93,7 @@
           <div class="submenu">
             <a href="#" class="link submenu-title">Projects</a>
             <a href="#" class="link">Details</a>
-       <a href="/joe - projects/projects/Add-projects.html" class="link">Add Project</a>
+            <a href="/joe - projects/projects/Add-projects.html" class="link">Add Project</a>
             <a href="/joe - projects/projects/searcheditp.html" class="link">Edit Project</a>
             <a href="/joe - projects/projects/searchremovep.html" class="link">Remove Projects</a>
           </div>
@@ -173,22 +173,42 @@
         <div class="text">DSK JF</div>
       </div>
 
-      
-      <div class="container">
+      <!-- <div class="container">
         <div class="right">
-          <h2 id="j">Search Exam</h2>
+           <h2 id="j">Add Project</h2> 
+          <input type="text" class="field" placeholder="Course ID" />
+          <input type="text" class="field" placeholder="Project ID" />
+          <input type="text" class="field" placeholder="Project's Idea" />
+          <input type="text" class="field" placeholder="num of Students"/>
+          <textarea placeholder="Notes" class="field"></textarea>
+          <button class="btn">Add</button> 
 
-          <!-- <input class="filed" type="text" name="search" placeholder="Enter "> -->
-          <div class="serchbar">
-          <input type="text" class="field" placeholder="Exam ID" /> <a href="/joe - Exams/Exams/Ban Exam.html"> <i id="searchicon" class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
-          </div>
-          <!-- <button class="btn">Search</button> -->
-        </div>
-      </div>
-    
       
+
+    
+        </div>
+      </div> -->
+      <div class="charts">
+        <div id="one"  class="chart">
+            <h2>Subscriptions (past 12 months)</h2>
+            <div>
+                <canvas id="lineChart"></canvas>
+            </div>
+        </div>
+        <div id="two" class="chart doughnut-chart">
+            <h2>Grades</h2>
+            <div>
+                <canvas id="doughnut"></canvas>
+            </div>
+        </div>
+    </div>
+
     </section>
+
     <!-- Link JS -->
-    <script src="../Sarah/assets/js/main.js"></script>
+    <!-- <script src="../Sarah/assets/js/main.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
   </body>
 </html>
